@@ -43,19 +43,21 @@ class HomePage extends StatelessWidget {
     // }
 
     data.forEach((opt) {
-      final widgetTemp = ListTile(
-        title: Text(opt['texto']),
-        leading: getIcon(opt['icon']),
-        trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
-        onTap: () {
-          Navigator.pushNamed(context, opt['ruta']);
+      if (opt['ruta'] != 'alert' && opt['ruta'] != 'inputs') {
+        final widgetTemp = ListTile(
+          title: Text(opt['texto']),
+          leading: getIcon(opt['icon']),
+          trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
+          onTap: () {
+            Navigator.pushNamed(context, opt['ruta']);
 
-          // final route = MaterialPageRoute(builder: (context) => AlertPage());
-          // Navigator.push(context, route);
-        },
-      );
+            // final route = MaterialPageRoute(builder: (context) => AlertPage());
+            // Navigator.push(context, route);
+          },
+        );
 
-      opciones..add(widgetTemp)..add(Divider());
+        opciones..add(widgetTemp)..add(Divider());
+      }
     });
     return opciones;
   }

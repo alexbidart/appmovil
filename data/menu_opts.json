@@ -2,9 +2,9 @@
     "nombreApp" : "Componentes",
     "rutas" : [
         {
-            "ruta" : "alert",
-            "icon" : "add_alert",
-            "texto": "Alertas"
+            "ruta" : "card",
+            "icon" : "folder_open",
+            "texto": "Sismos"
         },
         {
             "ruta" : "avatar",
@@ -12,9 +12,14 @@
             "texto": "Estudiantes"
         },
         {
-            "ruta" : "card",
-            "icon" : "folder_open",
-            "texto": "Sismos"
+            "ruta" : "alert",
+            "icon" : "add_alert",
+            "texto": "Alertas"
+        },
+        {
+            "ruta" : "inputs",
+            "icon" : "input",
+            "texto": "Inputs"
         }
     ]
 }

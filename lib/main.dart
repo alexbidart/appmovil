@@ -1,3 +1,4 @@
+// import 'package:componentes/splash_screen.dart';
 import 'package:componentes/src/pages/alert_page.dart';
 import 'package:componentes/src/routes/routes.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Componentes App',
       debugShowCheckedModeBanner: false,
       // home: HomePage());
-      initialRoute: '/',
+      initialRoute: 'Splash',
       routes: getApplicationRoutes(),
       onGenerateRoute: (RouteSettings settings) {
         print('Ruta llamada: ${settings.name}');
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         return MaterialPageRoute(
             builder: (BuildContext context) => AlertPage());
       },
+      // home: SplashScreen(),
     );
   }
 }

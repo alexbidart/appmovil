@@ -7,20 +7,27 @@ class AvatarPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Avatar Page'),
+        title: Text('Integrantes'),
         actions: <Widget>[
-          CircleAvatar(
-            backgroundImage: AssetImage('assets/Alexbidart.png'),
+          Container(
+            padding: EdgeInsets.all(5.0),
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/Alexbidart.png'),
+              radius: 25.0,
+            ),
           ),
           Container(
             margin: EdgeInsets.only(right: 10.0),
             child: CircleAvatar(
-              child: Text('SL'),
-              backgroundColor: Colors.brown,
+              child: Text('AB'),
+              backgroundColor: Colors.green,
             ),
           ),
         ],
       ),
+      // body: Center{
+
+      // },
     );
   }
 }
