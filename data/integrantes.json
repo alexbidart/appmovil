@@ -1,0 +1,21 @@
+{
+    "nombreApp" : "integrantes",
+    "nombres" : [
+        {
+            "nombre" : "Alex Bidart Orellana",
+            "icon" : "folder_open",
+            "texto": "Sismos"
+        },
+        {
+            "nombre" : "Edgar Ignacio Matus Soto",
+            "icon" : "accessibility",
+            "texto": "Estudiantes"
+        },
+        {
+            "nombre" : "Nicolas Jimenez Jimenez",
+            "icon" : "add_alert",
+            "texto": "Alertas"
+        }
+
+    ]
+}

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'Splash',
       routes: getApplicationRoutes(),
       onGenerateRoute: (RouteSettings settings) {
-        print('Ruta llamada: ${settings.name}');
+        // print('Ruta llamada: ${settings.name}');
 
         return MaterialPageRoute(
             builder: (BuildContext context) => AlertPage());

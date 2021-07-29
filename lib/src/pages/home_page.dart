@@ -1,25 +1,19 @@
-// import 'package:componentes/src/pages/alert_page.dart';
 import 'package:componentes/src/providers/menu_provider.dart';
 import 'package:componentes/src/utils/icono_string_util.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  // const HomePage({ Key? key }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Componentes'),
+        title: Text('Menu'),
       ),
       body: _lista(),
     );
   }
 
   Widget _lista() {
-    // print(menuProvider.opciones);
-    // menuProvider.cargarData()
-
     return FutureBuilder(
       future: menuProvider.cargarData(),
       initialData: [],
@@ -29,19 +23,10 @@ class HomePage extends StatelessWidget {
         );
       },
     );
-
-    // return ListView(
-    //   children: _listaItems(),
-    // );
   }
 
   List<Widget> _listaItems(data, BuildContext context) {
     final List<Widget> opciones = [];
-
-    // if (data == null) {
-    //   return [];
-    // }
-
     data.forEach((opt) {
       if (opt['ruta'] != 'alert' && opt['ruta'] != 'inputs') {
         final widgetTemp = ListTile(
@@ -50,9 +35,6 @@ class HomePage extends StatelessWidget {
           trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
           onTap: () {
             Navigator.pushNamed(context, opt['ruta']);
-
-            // final route = MaterialPageRoute(builder: (context) => AlertPage());
-            // Navigator.push(context, route);
           },
         );
 

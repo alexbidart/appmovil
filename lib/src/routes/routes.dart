@@ -1,4 +1,4 @@
-import 'package:componentes/splash_screen.dart';
+import 'package:componentes/src/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:componentes/src/pages/input_page.dart';
